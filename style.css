@@ -1,3 +1,5 @@
+
+/* s- header part */
 .flex-reverse{
     flex-direction: row-reverse;
     
@@ -24,8 +26,6 @@
     margin-left: 40px;
 }
 
-
-/* s- header part */
 .bg-body-tertiary{
     background-color: transparent !important;
 }
@@ -37,9 +37,30 @@
     color: white;
 }
 .s-content{
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 95px;
+    padding-bottom: 95px;
 }
 .s-content>h1{
     font-size: 60px;
+}
+
+/* works part css start */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+@media screen and (max-width:576px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (max-width:768px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+.works{
+    margin: 100px 0px;
 }
