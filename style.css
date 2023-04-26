@@ -1,4 +1,6 @@
-
+body{
+    overflow-x: none;
+}
 /* s- header part */
 .flex-reverse{
     flex-direction: row-reverse;
@@ -69,10 +71,42 @@
 .g-grid{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-row-gap: 2px;
-    grid-column-gap: 2px;
+    grid-row-gap: 3px;
+    grid-column-gap: 3px;
+    
 }
-.g-box>img{
+.g-grid>.g-box>img{
     width: 100%;
     height: 100%;
 }
+.g-grid>.g-box{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.g-grid>.g-box>.g-content{
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d94343b0;
+    transform: translateY(100%);
+  
+    /* transform: scale(0); */
+    transition: .5s;
+
+}
+
+
+.g-grid>.g-box:hover .g-content{
+    transform: translateY(0%);
+    /* transform: scale(1); */
+    transition: .5s;
+} 
