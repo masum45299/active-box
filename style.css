@@ -73,7 +73,14 @@ body{
     grid-template-columns: repeat(4,1fr);
     grid-row-gap: 3px;
     grid-column-gap: 3px;
-    
+}
+@media screen and (max-width:576px) {
+    .g-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 3px;
+        grid-column-gap: 3px;
+    } 
 }
 .g-grid>.g-box>img{
     width: 100%;
