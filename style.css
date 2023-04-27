@@ -224,3 +224,16 @@ body{
 .location-icon{
     background-color: transparent;
 }
+
+/* footer part css */
+footer{
+    background-color: #313454;
+    
+}
+.footer-content{
+    color: #808080;
+    padding: 25px 0px;
+}
+.footer-content>small>span{
+    color: white;
+}
