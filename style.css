@@ -166,14 +166,61 @@ body{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
-
+.carousel-content{
+    padding: 0px 100px;
+}
+@media screen and (max-width:576px) {
+    .about-grid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .carousel-content{
+        padding: 0px 50px;
+    }
+}
 .red{
-    background-color: red;
+    background-color: #d44141;
     height: 355px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
-.carousel-content{
-    padding: 0px 100px;
+.merun{
+    background-color: #53354a;
+    height: 355px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.navy-blue{
+    background-color: #323550;
+    height: 355px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.carousel-content>p:nth-of-type(1){
+    font-size: 20px;
+}
+
+/* location */
+.location-section{
+    background-color: #3a3e64;
+}
+.location-box>h4{
+    color: white;
+    margin-bottom: 20px;
+}
+.location-box>p{
+    color: #afb0bc;
+}
+.l-justify{
+    justify-content: center;
+}
+.location-icon{
+    background-color: transparent;
 }
