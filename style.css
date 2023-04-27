@@ -160,3 +160,20 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+/* about css start */
+.about-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.red{
+    background-color: red;
+    height: 355px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-content{
+    padding: 0px 100px;
+}
